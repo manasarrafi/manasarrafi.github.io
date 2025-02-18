@@ -54,5 +54,3 @@ function mousePressed() {
     shape.changeSpeed();
 }
 </script>
-</body>
-</html>
