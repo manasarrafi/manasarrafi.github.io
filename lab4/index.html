@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+<header>
+  <title> f1 </title>
+</header>
+
+<script>
+
+  function setup() {
+   
+    // Load an image of Charles Leclerc using createImg
+   imgElement = createImg('charlesleclerc.jpg');
+   imgElement.position(550, 100);
+   imgElement.size(200, 300); // Set the image size
+  }
+  function draw() {
+    fill(0, 0, 255);
+    textSize(24); 
+  
+  }
+</script>
+<body>
+  <!--using https://www.youtube.com/watch?v=Ki_0iES2cGI&ab_channel=Let%27sCode to learn how to load video-->
+  <video controls loop src = "inchident.webm"></video> 
+  
+</body>
+</html>
