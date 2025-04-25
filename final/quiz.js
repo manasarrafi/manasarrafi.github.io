@@ -2,7 +2,7 @@ let quizData = [
     {
       question: "What is Mana's Major?",
       options: ["Illustration", "Animation", "Environmental Design", "Graphic Design"],
-      answer: "Environmental Design"
+      answer: "Environmental Design" // for now... im starting to like comp sci
     },
     {
       question: "Where is Mana From?",
@@ -22,7 +22,7 @@ let quizData = [
     {
         question: "Mana's Favourite Animal is an Otter?",
         options: ["True", "False"],
-        answer: "True"
+        answer: "True" //how could it not be
     },
     {
       question: "How Many Languages does Mana Speak?",
@@ -83,7 +83,7 @@ let quizData = [
       let y = 100 + i * 50;
   
       // Determine button color
-      let btnColor = color(200); // default gray
+      let btnColor = color(200); 
   
       if (showingFeedback) {
         if (i === selectedOption && q.options[i] === q.answer) {
@@ -93,8 +93,9 @@ let quizData = [
         } else if (q.options[i] === q.answer) {
           btnColor = color(0, 200, 0); // highlight the correct one
         }
-      }
-  
+      } /* this series of lines is my favourite because it took me a while to figure out how to get the right answer to turn green and the wrong one to turn red
+        I had a lot of fun solving this because it sounded like a good idea in my head and I wanted to make it come to "life"*/
+
       fill(btnColor);
       rect(150, y, 300, 40, 5);
       fill(0);
@@ -109,7 +110,7 @@ let quizData = [
       textSize(18);
       text("Next", width / 2, 520);
     }
-  }
+  } 
   
   function drawResults() {
     fill(0);
@@ -133,7 +134,7 @@ let quizData = [
         if (currentQuestion >= quizData.length) {
           showResult = true;
         }
-      }
+      } // this also took a while, I couldn't get the next button to work with a click
       return;
     }
   
@@ -150,4 +151,4 @@ let quizData = [
       }
     }
   }
-  
+  // thank you for an amazing year adam! :)
